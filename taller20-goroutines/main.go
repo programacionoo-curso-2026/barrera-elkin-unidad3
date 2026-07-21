@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Print("Hola GoRoutines")
+	go ShowGoroutines(1)
+	time.Sleep(10 * time.Second)
+}
+
+func ShowGoroutines(id int) {
+	fmt.Printf("Goroutines #%d\n", id)
 }
