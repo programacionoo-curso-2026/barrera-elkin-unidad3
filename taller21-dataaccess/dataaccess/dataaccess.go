@@ -8,7 +8,7 @@ import (
 )
 
 func InitDB() *sql.DB {
-	db, err := sql.Open("sqlite", "competenciasdocentes.db")
+	db, err := sql.Open("sqlite", "planificadoreficiente.db")
 	if err != nil {
 		log.Fatal(err)
 	}
