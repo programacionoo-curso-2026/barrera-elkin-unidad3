@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"sync"
 	"time"
 )
 
@@ -13,6 +14,9 @@ type Order struct {
 
 func main() {
 
+	var wg sync.WaitGroup
+	wg.Add(3)
+
 	orders := generateOrders(20)
 
 	go processOrders(orders)
@@ -21,8 +25,9 @@ func main() {
 
 	go reportOrderStatus(orders)
 
-	fmt.Print("Todas las operaciones completadas. Saliendo")
+	wg.Wait()
 
+	fmt.Print("Todas las operaciones completadas. Saliendo")
 }
 
 func generateOrders(count int) []*Order {

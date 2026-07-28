@@ -15,3 +15,6 @@
 
 ## Sexta Iteraccion
 (image-5.png)
+
+## Septima Iteraccion
+(image-6.png)
