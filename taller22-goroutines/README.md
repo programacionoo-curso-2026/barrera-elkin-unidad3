@@ -3,3 +3,6 @@
 
 ## Segunda Iteraccion
 (image-1.png)
+
+## Tercera Iteraccion
+(image-2.png)
