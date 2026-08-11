@@ -35,6 +35,20 @@ var preguntas = []Pregunta{
 		OpcionC:  ":=",
 		Solucion: "A",
 	},
+	{
+		Pregunta: "En Go, ¿qué palabra clave se utiliza para declarar una variable?",
+		OpcionA:  "var",
+		OpcionB:  "let",
+		OpcionC:  "define",
+		Solucion: "var",
+	},
+	{
+		Pregunta: "¿Qué función se utiliza para imprimir texto en Go?",
+		OpcionA:  "print()",
+		OpcionB:  "fmt.Println()",
+		OpcionC:  "echo()",
+		Solucion: "fmt.Println()",
+	},
 }
 
 // ---------- Resultados (ranking en memoria) ----------
